@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(250, 235, 215);
+    color: black;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
+header {}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    gap: 20px;
+
+}
+
+nav,
+a {
+    text-decoration: none;
+    
+}
+
+hover.nav a {
+    color: aqua;
+    font-weight: 700;
+    
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+#home {
+    border: 1px solid black;
+}
+
+#first_img {
+    border-radius: 60%;
+}
+
+.personal_infor {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
