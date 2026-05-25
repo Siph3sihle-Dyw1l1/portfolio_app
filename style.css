@@ -1,56 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    ;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: rgb(250, 235, 215);
-    color: black;
-    font-size: 16px;
-    line-height: 1.7;
-    font-weight: 400;
-    border: 1px solid black;
+    background-color: rgb(30, 30, 30);
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-header {}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #4CAF50;
+}
 
 nav {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 20px;
-    top: 0;
     gap: 20px;
-
-}
-
-nav,
-a {
-    text-decoration: none;
-    
-}
-
-hover.nav a {
-    color: aqua;
-    font-weight: 700;
-    
-
+    padding: 21px;
 }
 
 .logo {
     margin-right: auto;
 }
 
-#home {
-    border: 1px solid black;
+nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
 }
 
-#first_img {
-    border-radius: 60%;
+nav a:hover{
+    color: #458ea0;
 }
 
-.personal_infor {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    margin-top: 50px;
+.hamb{
+    display:none;
+    font-size: 26px;
+    cursor:pointer;
+}
+
+section{
+    padding: 20px;;
+}
+
+
+footer{
+    padding: 20px;
+    text-align: center;;
+}
+
+#home{
+    text-align: center;
+}
+
+#firts_img{
+    border-radius: 50%;
 }
