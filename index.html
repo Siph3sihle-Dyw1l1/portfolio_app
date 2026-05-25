@@ -14,7 +14,7 @@
         <nav>
             <img src="images/my_logo.png" alt="SDywili Logo" class="logo" style="width: 100px;height: auto;">
             <button class="hamb">☰</button>
-            
+
             <div class="navL">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -31,24 +31,34 @@
 
         <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" style="width: 350px;height: auto;">
     </section>
-
+    <hr>
     <section id="about">
-        <h1>Siphesihle Dywili</h1>
+        <div class="about_me">
+            <div>
+                <h1>Siphesihle Dywili</h1>
+                <p>
+                    I am a final-year Computer Science student based in Polokwane, South Africa, currently
+                    <br>completing my
+                    studies
+                    at
+                    the Tshwane University of Technology. My passion lies in the "engine room"<br> of software
+                    development—designing
+                    resilient database schemas, optimizing queries<br> and writing clean, high-performance server-side
+                    logic.
+                    <br><br>
+                    My development philosophy is straightforward: build simple, efficient, and scalable systems.<br>
+                    Driven
+                    by a
+                    strong
+                    proficiency in Java and Jakarta EE (JEE), I prefer solid, foundational code<br> over over-engineered
+                    solutions—an
+                    approach that recently helped me achieve perfect scores in<br> my advanced database programming
+                    modules.
+                </p>
+            </div>
 
-        <p>
-            I am a final-year Computer Science student based in Polokwane, South Africa, currently <br>completing my
-            studies
-            at
-            the Tshwane University of Technology. My passion lies in the "engine room"<br> of software
-            development—designing
-            resilient database schemas, optimizing queries<br> and writing clean, high-performance server-side logic.
-            <br><br>
-            My development philosophy is straightforward: build simple, efficient, and scalable systems.<br> Driven by a
-            strong
-            proficiency in Java and Jakarta EE (JEE), I prefer solid, foundational code<br> over over-engineered
-            solutions—an
-            approach that recently helped me achieve perfect scores in<br> my advanced database programming modules.
-        </p>
+            <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" id="about_img">
+        </div>
         <h2>Tech Skills</h2>
         <h4>Languages</h4>
 
@@ -97,6 +107,14 @@
                         <input type="email" name="name" placeholder="Enter your email" />
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <label>Message: </label>
+                    </td>
+                    <td>
+                        <textarea name="message" placeholder="Enter your message"></textarea>
+                    </td>
+                </tr>
             </table>
 
             <button type="submit"> Submit</button>
@@ -131,7 +149,7 @@
 
         hamburger.addEventListener(
             "click",
-            function(){
+            function () {
                 navL.classList.toggle('active');
             }
         );

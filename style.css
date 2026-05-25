@@ -37,30 +37,104 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover{
-    color: #458ea0;
+nav a:hover {
+    color: rgb(187, 255, 0);
 }
 
-.hamb{
-    display:none;
+.hamb {
+    display: none;
     font-size: 26px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-section{
-    padding: 20px;;
+.navL ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 30px;
 }
 
-
-footer{
+section {
     padding: 20px;
-    text-align: center;;
+    ;
 }
 
-#home{
+
+#home {
     text-align: center;
 }
 
-#firts_img{
+#about_img {
     border-radius: 50%;
+    width: 300px;
+    height: auto;
+    
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4 {
+    color: #4CAF50
+}
+
+
+label{
+    font-size: large;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #8ca045;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+footer a:hover{
+    color: rgb(187, 255, 0);
+}
+
+/*For the phone*/
+@media(max-width: 768px){
+    .hamb{
+        display: rgb(207, 58, 58);
+    }
+
+    .navL ul{
+        display:none;
+        flex-direction:  column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navL ul.active{
+        display:flex;
+    }
 }
