@@ -23,12 +23,15 @@ hr {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     padding: 21px;
+    flex-wrap: wrap;
 }
 
 .logo {
-    margin-right: auto;
+    width: 100px;
+    height: auto;
 }
 
 nav a {
@@ -45,6 +48,15 @@ nav a:hover {
     display: none;
     font-size: 26px;
     cursor: pointer;
+    font-size: 30px;
+    color: #4CAF50;
+    border: none;
+    background: none;
+    padding: 5px 10px;
+}
+
+.hamb:hover {
+    color: rgb(187, 255, 0);
 }
 
 .navL ul {
@@ -56,7 +68,7 @@ nav a:hover {
 
 section {
     padding: 20px;
-    ;
+
 }
 
 
@@ -68,7 +80,7 @@ section {
     border-radius: 50%;
     width: 300px;
     height: auto;
-    
+
 }
 
 .about_me {
@@ -78,23 +90,41 @@ section {
     padding: 20px;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     color: #4CAF50
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    padding: 20px;
+}
 
-label{
+.map-container {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+label {
     font-size: large;
 }
 
-input{
+input {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    border: none;;
+    border: none;
+    ;
 }
 
-button{
+button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -103,7 +133,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #8ca045;
 }
 
@@ -112,29 +142,56 @@ footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #4CAF50;
 }
 
-footer a:hover{
+footer a:hover {
     color: rgb(187, 255, 0);
 }
 
 /*For the phone*/
-@media(max-width: 768px){
-    .hamb{
-        display: rgb(207, 58, 58);
+@media(max-width: 768px) {
+    .hamb {
+        display: block;
     }
 
-    .navL ul{
-        display:none;
-        flex-direction:  column;
+    .navL {
+        width: 100%;
+    }
+
+    .navL ul {
+        display: none;
+        flex-direction: column;
         width: 100%;
         margin-top: 10px;
+        gap: 10px;
+        text-align: center;
     }
 
-    .navL ul.active{
-        display:flex;
+    .navL ul.active {
+        display: flex;
+    }
+
+    .navL ul li {
+        width: 100%;
+    }
+
+    .about_me {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navL ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #about_img {
+        width: 200px;
+        height: auto;
     }
 }
