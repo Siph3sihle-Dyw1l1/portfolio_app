@@ -2,7 +2,6 @@
 
 html {
     scroll-behavior: smooth;
-    ;
 }
 
 body {
@@ -12,6 +11,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+.hero-image {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 hr {
@@ -93,7 +99,11 @@ h1,
 h2,
 h3,
 h4 {
-    color: #4CAF50
+    color: #4CAF50;
+}
+
+h4 {
+    text-decoration: underline;
 }
 
 .contact-layout {
@@ -121,18 +131,26 @@ h4 {
     border-radius: 10px;
 }
 
-
-
-label {
-    font-size: large;
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-input {
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input,
+textarea {
     padding: 10px;
-    margin: 5px;
+    margin-top: 5px;
     border-radius: 5px;
     border: none;
-    ;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -150,7 +168,16 @@ button:hover {
 
 footer {
     padding: 20px;
-    text-align: center;
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+    padding: 0 20px;
 }
 
 footer a {
@@ -160,6 +187,23 @@ footer a {
 
 footer a:hover {
     color: rgb(187, 255, 0);
+}
+
+.social-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.social-circle:hover {
+    background-color: #4CAF50;
+    color: #1e1e1e;
 }
 
 /*For the phone*/
@@ -208,5 +252,10 @@ footer a:hover {
 
     .contact-layout {
         flex-direction: column;
+    }
+
+    .footer-layout {
+        flex-direction: column;
+        text-align: center;
     }
 }

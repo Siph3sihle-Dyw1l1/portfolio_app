@@ -28,9 +28,9 @@
     <hr>
 
     <section>
-
-        <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" style="width: 350px;height: auto;">
+        <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" class="hero-image">
     </section>
+
     <hr>
     <section id="about">
         <div class="about_me">
@@ -59,6 +59,7 @@
 
             <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" id="about_img">
         </div>
+        <hr>
         <h2>Tech Skills</h2>
         <h4>Languages</h4>
 
@@ -81,93 +82,88 @@
         </ul>
 
         <h2>Soft Skills</h2>
+        <ul>
+            <li>Problem Solving & Debugging</li>
+            <li>Team Collaboration (SafeGuard SA Team)</li>
+            <li>Technical Architecture Planning</li>
+        </ul>
     </section>
 
     <hr>
 
-    <section id="contact">
 
+
+    <section id="contact">
         <h2>Contact Us</h2>
 
-
-        <section id="contact">
-
-            <h2>Contact Us</h2>
-
-            <div class="contact-layout">
-
-                <!-- Left: Form -->
-                <div class="contact-form">
-                    <form>
-                        <table>
-                            <tr>
-                                <td><label>Full Name: </label></td>
-                                <td><input type="text" name="name" placeholder="Enter your name" /></td>
-                            </tr>
-                            <tr>
-                                <td><label>Email: </label></td>
-                                <td><input type="email" name="email" placeholder="Enter your email" /></td>
-                            </tr>
-                            <tr>
-                                <td><label>Message: </label></td>
-                                <td><textarea name="message" placeholder="Enter your message"></textarea></td>
-                            </tr>
-                        </table>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-
-               
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231485.57922173274!2d29.382256!3d-23.896168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec41a1d3488b421%3A0x258f6e583c6b612!2sPolokwane!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
-                        width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
-                </div>
-
+        <div class="contact-layout">
+            <div class="contact-form">
+                <form class="flex-form">
+                    <div class="form-group">
+                        <label>Full Name:</label>
+                        <input type="text" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea name="message" placeholder="Enter your message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-        </section>
-        <hr>
 
-        <footer>
-            <h3>Follow Me</h3>
-            <a href="https://www.facebook.com/siphesihle.dywili">
-                Facebook
-            </a> |
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=Marshall%20Street,%20Polokwane,%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <hr>
 
-            <a href="https://www.linkedin.com/in/siphesihle-dywili-2b1108333/">
-                LinkedIn
-            </a> |
+    <footer>
+        <div class="footer-layout">
+            <div class="footer-address">
+                <p><strong>Address Here</strong><br>159 Marshal Street, Polokwane, Limpopo<br>South Africa</p>
+            </div>
 
-            <a href="https://wa.me/27603134368">
-                Whatsapp
-            </a> |
-            Phone: <a href="tel:+27603134368">+27 60 313 4368</a>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/siphesihle.dywili" class="social-circle">F</a>
+                <a href="https://www.linkedin.com/in/siphesihle-dywili-2b1108333/" class="social-circle">L</a>
+                <a href="https://wa.me/27603134368" class="social-circle">W</a>
+            </div>
 
-            <p>&copy; 2026 Siphesihle Dywili.</p>
+            <div class="footer-links">
+                <p><strong>Additional Quick Links</strong></p>
+                <p>Phone: <a href="tel:+27603134368">+27 60 313 4368</a></p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">© 2026 Siphesihle Dywili.</p>
+    </footer>
 
-        </footer>
+    <script>
+        const hamburger = document.querySelector('.hamb');
+        const navL = document.querySelector('.navL');
+        const navLinks = document.querySelectorAll('.navL ul li a');
 
-        <script>
-            const hamburger = document.querySelector('.hamb');
-            const navL = document.querySelector('.navL');
-            const navLinks = document.querySelectorAll('.navL ul li a');
+        hamburger.addEventListener(
+            "click",
+            function () {
+                navL.classList.toggle('active');
+            }
+        );
 
-            hamburger.addEventListener(
-                "click",
+        navLinks.forEach(link => {
+            link.addEventListener("click",
                 function () {
-                    navL.classList.toggle('active');
-                }
-            );
-
-            navLinks.forEach(link => {
-                link.addEventListener("click",
-                    function () {
-                        navL.classList.remove('active');
-                    });
-            });
-        </script>
+                    navL.classList.remove('active');
+                });
+        });
+    </script>
 </body>
 
 </html>
