@@ -211,12 +211,20 @@ footer a:hover {
 
 /*For the phone*/
 @media(max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
     .hamb {
         display: block;
+        margin-left: auto;
     }
 
     .navL {
         width: 100%;
+        order: 3;
     }
 
     .navL ul {
@@ -224,8 +232,9 @@ footer a:hover {
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
-        gap: 10px;
+        gap: 0;
         text-align: center;
+        padding-left: 0;
     }
 
     .navL.active ul {
@@ -234,6 +243,13 @@ footer a:hover {
 
     .navL ul li {
         width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    .navL ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 18px;
     }
 
     .about_me {
@@ -242,10 +258,84 @@ footer a:hover {
         text-align: center;
     }
 
+    #about_img {
+        width: 200px;
+        height: auto;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+    }
+
+    .footer-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*For the phone - popup nav*/
+@media(max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .hamb {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navL {
+        position: absolute;
+        top: 100%;
+        right: 21px;
+        width: 200px;
+        background-color: rgb(30, 30, 30);
+        border: 1px solid #4CAF50;
+        border-radius: 8px;
+        z-index: 999;
+        display: none;
+    }
+
+    .navL.active {
+        display: block;
+    }
+
+    .navL ul {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navL ul li {
+        width: 100%;
+        border-top: none;
+    }
+
     .navL ul li a {
         display: block;
         padding: 12px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .navL ul li a:hover {
+        background-color: rgba(76, 175, 80, 0.15);
+    }
+
+    .about_me {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
     #about_img {

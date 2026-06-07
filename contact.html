@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Siphesihle's Portfolio</title>
+    <title>Contact Us | Siphesihle's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header id="home">
+    <header>
         <nav>
             <img src="images/my_logo.png" alt="SDywili Logo" class="logo" style="width: 100px;height: auto;">
             <button class="hamb">☰</button>
@@ -27,39 +27,34 @@
 
     <hr>
 
-    <section>
-        <video class="hero-video" src="video/my-video.mp4" autoplay muted loop playsinline>
-        </video>
-    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
 
-    <hr>
-
-    <section>
-        <div class="about_me">
-            <div>
-                <h1>Siphesihle Dywili</h1>
-                <p>
-                    I am a final-year Computer Science student based in Polokwane, South Africa, currently
-                    <br>completing my
-                    studies
-                    at
-                    the Tshwane University of Technology. My passion lies in the "engine room"<br> of software
-                    development—designing
-                    resilient database schemas, optimizing queries<br> and writing clean, high-performance server-side
-                    logic.
-                    <br><br>
-                    My development philosophy is straightforward: build simple, efficient, and scalable systems.<br>
-                    Driven
-                    by a
-                    strong
-                    proficiency in Java and Jakarta EE (JEE), I prefer solid, foundational code<br> over over-engineered
-                    solutions—an
-                    approach that recently helped me achieve perfect scores in<br> my advanced database programming
-                    modules.
-                </p>
+        <div class="contact-layout">
+            <div class="contact-form">
+                <form class="flex-form">
+                    <div class="form-group">
+                        <label>Full Name:</label>
+                        <input type="text" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea name="message" placeholder="Enter your message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
 
-            <img src="images/IMG-20250918-WA0016.jpg" alt="Siphesihle's picture" id="about_img">
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=Marshall%20Street,%20Polokwane,%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
         </div>
     </section>
 
